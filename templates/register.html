@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="app-card">
+      <div class="header-row">
+        <h1>Student Event Registration</h1>
+      </div>
+
+      <h3>Register</h3>
+
+      <form method="post" action="/perform_registration">
+        <div class="input-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="input-row">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" />
+        </div>
+        <div class="input-row">
+          <label for="phone">Mobile Number</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+        <div class="input-row">
+          <label for="education">Highest Education</label>
+          <input type="text" id="education" name="education" />
+        </div>
+        <div class="input-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="input-row">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <input type="submit" value="Register" />
+      </form>
+
+      <p class="footer-note">
+        Already have an account? <a href="/">Login here</a>
+      </p>
+    </div>
+  </body>
+</html>
